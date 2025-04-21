@@ -4,8 +4,8 @@ This project aims to classify images from the Pascal VOC 2008 dataset using vari
 
 ## Group Members
 
-- **Group Leader**: [Leader's Name]
-- **Group Members**: [Member 1], [Member 2], [Member 3], [Member 4]
+- **Group Leader**: [Muhammad Sameed]
+- **Group Members**: [Muhammad Sameed], [Ayesha Irshad], [Arooba Minhas], [Abdullah Baqai]
 
 ## Problem Understanding
 
