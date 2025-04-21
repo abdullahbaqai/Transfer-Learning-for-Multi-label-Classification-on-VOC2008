@@ -1,0 +1,45 @@
+# LaTeX intermediate and output files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*.sav
+
+# Editor-specific files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Output PDFs (optional – remove if you want to track them)
+*.pdf
+
+# Image cache or generated figures (optional – add or remove depending on workflow)
+*.jpeg
+*.jpg
+*.png
+*.svg
+*.eps
+*.pdf_tex
+
+# MacTeX or TexLive specific
+texput.log
