@@ -56,11 +56,12 @@ We use a **Generative Adversarial Network (GAN)** to generate synthetic data for
 We analyze whether GAN-generated data improves classification performance and the factors influencing the results.
 
 ## Results
+Model	 	| mAP 	   | Accuracy | Precision | Recall
+ResNet50 	| 0.703557 | 0.937486 | 0.534986  | 0.801817
+VGG16 	 	| 0.672096 | 0.967301 | 0.886091  | 0.610239
+DenseNet121 	| 0.78855  | 0.97301  | 0.829636  | 0.772089
+MobileNet_V2 	| 0.692244 | 0.967647 | 0.831633  | 0.672998
 
-- **VGGNet**: [mAP Value]
-- **ResNet50**: [mAP Value]
-- **DenseNet**: [mAP Value]
-- [Additional Architecture]: [mAP Value]
 
 ### Augmentation Performance
 - **VAE Augmentation**:
@@ -68,9 +69,12 @@ We analyze whether GAN-generated data improves classification performance and th
   - 200 samples/class: [mAP Value]
   - 500 samples/class: [mAP Value]
 - **GAN Augmentation**:
-  - 100 samples/class: [mAP Value]
-  - 200 samples/class: [mAP Value]
-  - 500 samples/class: [mAP Value]
+| Model        |      mAP |   Accuracy |   Precision |   Recall |
+|:-------------|---------:|-----------:|------------:|---------:|
+| VGG16        | 0.941649 |   0.986974 |    0.992982 | 0.744737 |
+| RESNET50     | 0.949177 |   0.863421 |    0.267983 | 1        |
+| DENSENET121  | 0.95     |   1        |    1        | 1        |
+| MOBILENET_V2 | 0.94929  |   0.999737 |    1        | 0.994737 |
 
 ## Conclusion
 
