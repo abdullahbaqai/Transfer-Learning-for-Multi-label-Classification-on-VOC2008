@@ -31,7 +31,7 @@ We begin by applying **VGGNet** through transfer learning for the classification
 - **VGGNet**
 - **ResNet50**
 - **DenseNet**
-- [Additional Architecture]
+- **MobineNet_V2**
 
 For each architecture, we evaluate the performance based on **mAP** and provide a comparison between models. We also display the **top 10 ranked images** for each architecture.
 
@@ -56,18 +56,28 @@ We use a **Generative Adversarial Network (GAN)** to generate synthetic data for
 We analyze whether GAN-generated data improves classification performance and the factors influencing the results.
 
 ## Results
-Model	   	    | mAP 	   | Accuracy | Precision | Recall
-ResNet50 	    | 0.703557 | 0.937486 | 0.534986  | 0.801817
-VGG16 	    	| 0.672096 | 0.967301 | 0.886091  | 0.610239
+
+Model	 	| mAP 	   | Accuracy | Precision | Recall
+ResNet50 	| 0.703557 | 0.937486 | 0.534986  | 0.801817
+VGG16 	 	| 0.672096 | 0.967301 | 0.886091  | 0.610239
 DenseNet121 	| 0.78855  | 0.97301  | 0.829636  | 0.772089
 MobileNet_V2 	| 0.692244 | 0.967647 | 0.831633  | 0.672998
 
 
 ### Augmentation Performance
 - **VAE Augmentation**:
-  - 100 samples/class: [mAP Value]
-  - 200 samples/class: [mAP Value]
-  - 500 samples/class: [mAP Value]
+MobileNetV2	100	0.7335	0.6968	0.6602	0.6748
+VGG16	100	0.7127	0.6771	0.6414	0.6557
+ResNet50	100	0.7747	0.7360	0.6972	0.7127
+DenseNet121	100	0.7685	0.7301	0.6916	0.7070
+VGG16	200	0.7527	0.7151	0.6774	0.6925
+DenseNet121	200	0.7795	0.7405	0.7016	0.7171
+MobileNetV2	200	0.6973	0.6624	0.6276	0.6415
+ResNet50	200	0.7576	0.7197	0.6818	0.6970
+MobileNetV2	500	0.6705	0.6370	0.6034	0.6169
+ResNet50	500	0.7273	0.6909	0.6546	0.6691
+DenseNet121	500	0.7587	0.7208	0.6828	0.6980
+VGG16	500	0.7134	0.6777	0.6421	0.6563
 - **GAN Augmentation**:
 | Model        |      mAP |   Accuracy |   Precision |   Recall |
 |:-------------|---------:|-----------:|------------:|---------:|
